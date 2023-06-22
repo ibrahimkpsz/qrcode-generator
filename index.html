@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>QR Code Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700;800;900&display=swap" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="gradient">
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 p-5" id="inputBox">
+                    <h1 class="title">QR Code Generator</h1>
+                    <div class="mt-5">
+                        <label for="linkInput" class="form-label">Link</label>
+                        <input type="text" class="form-control" id="linkInput">
+                        <div class="alert alert-danger my-3" role="alert" id="alert">
+                            Please enter the link!
+                        </div>
+                        <div class="alert alert-success my-3 d-none" role="alert" id="success_alert">
+                            Transaction successful!
+                        </div>
+                        <button class="btn btn-dark w-100" id="generate">Generate QR Code</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 p-5 text-center" id="qrBox">
+                    <img class="img-fluid" src="" alt="" id="qrCodeImg">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
